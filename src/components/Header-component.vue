@@ -5,20 +5,25 @@
     <router-link class="nav-pages" to="/">Home</router-link>
     <router-link class="nav-pages" to="/deals">Deals</router-link>
     <router-link class="nav-pages" to="/menu">Menu</router-link>
-    <router-link class="nav-pages" to="/zingerBurger">Zinger Burgers</router-link>
-    <router-link class="nav-pages" to="/pizza">Pizza</router-link>
-    <router-link class="nav-pages" to="/shwarma">shwarma</router-link>
-    <router-link class="nav-pages" to="/fries">Fries</router-link>
-    <router-link class="nav-pages" to="/contact">Contact Us</router-link>
+    <router-link class="nav-pages" to="/contact">Contact</router-link>
   </nav>
-  <div class="search-box">
-  <input class="input" type="search" placeholder="Search">
+  <div class="search-box search-box search-box i">
+  <input class="input-search" type="search" placeholder="Search">
   <i class="fa-solid fa-magnifying-glass"></i>
   </div>
   </header>
 </template>
 
-<style>
+<style scoped>
+* {
+  margin: 0%;
+  /* padding: 0%; */
+}
+body {
+  margin: 0%;
+  padding: 0%;
+    box-sizing: border-box;
+}
   .header{
     background-color: rgba(45, 12, 8, 1) ;
     display: flex;
@@ -37,35 +42,39 @@
     color: brown;
   }
   .nav-pages{
-    font-size: 18px;
+    font-size: 19px;
     color: #ccc;
     text-decoration: none;
-    padding: 3px;
-    margin: 5px;
-    font-weight: 530px;
+    padding: 4px;
+    padding-left: 13%;
+    font-weight: 600;
   }
   .nav-pages:hover{
     color: brown;
   }
-  .input{
-    width: 95%;
-    margin-right: 2%;
-    height: 30px;
-    padding-right:35px ;
-    flex: 1;
-    font-size: 16px;
-  }
-  .search-box {
-  position: relative;
-  width: 250;
+
+   .input-search {
+  width: 100%;
+  height: 35px;
+  padding: 5px 35px 5px 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
 }
-  .search-box i{
-    position: absolute;
-    /* right: 10px; */
-    top: 50%;
-    transform: translateY(-50%);
-    color: gray;
-    font-size: 20px;
-    margin-right: 3%;
-  }
+  
+ .search-box {
+  position: relative;
+  width: 230px;   /* perfect size */
+}
+  
+  .search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+.for-test{
+  display: flex;
+}
 </style>

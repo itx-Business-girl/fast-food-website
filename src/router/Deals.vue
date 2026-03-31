@@ -5,46 +5,53 @@
     <i><p class="p1">Enjoy our best fast food deals made just for you.<br> From juicy burgers to cheesy pizzas and crispy fries</br> — <br>grab your favorites at amazing prices.</br></p></i>
     </div>
     <i><h1 class="heading-speacial">Speacial deals!</h1></i>
+
+
     <div class="productCart ">
-        <div class="product-flex">
-          <img class="productitems" src="https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg"></img>
-          <h3>deal 1</h3>
-          <p>$23</p>
-          <button class="button">Add to cart</button>
-        </div>
+        <div class="product-flex" 
+     v-for="value in dataArray" 
+     :key="value.img">
 
-        <div class="product-flex">
-          <img class="productitems" src="https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg"></img>
-          <h3>deals</h3>
-          <p>for you</p>
-          <button class="button">Add to cart</button>
-        </div>
+  <img class="productitems" :src="value.img" :alt="value.title" />
+  
+  <h3>{{ value.title }}</h3>
+  <p>{{ value.subtitle }}</p>
+  
+  <button class="button">Add to cart</button>
 
-         <div class="product-flex">
-          <img class="productitems" src="https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg"></img>
-          <h3>deals</h3>
-          <p>for you</p>
-          <button class="button">Add to cart</button>
-        </div>
-
-         <div class="product-flex padding-5">
-          <img class="productitems" src="https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg"></img>
-          
-            <h3>deals</h3>
-          <p>for you</p>
-          <button class="button">Add to cart</button>
-         
-        
-        </div>
-    
-         <div class="product-flex">
-          <img class="productitems" src="https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg"></img>
-          <h3>deals</h3>
-          <p>for you</p>
-          <button class="button">Add to cart</button>
-        </div>
-    </div>
+</div>
+</div>
 </template>
+<script setup>
+import { ref } from 'vue'
+const dataArray = ref([
+  {
+    img: 'https://i.pinimg.com/736x/07/a1/21/07a121f2e351a30ad67a9fe85fbb9e83.jpg',
+    title: 'deal 1',
+    subtitle: '23'
+  },
+  {
+    img: 'https://i.pinimg.com/1200x/de/f4/77/def4772c25b1d237a5483d7ac4f2b6e5.jpg',
+    title: 'deal 2',
+    subtitle: '23'
+  },
+  {
+    img: 'https://i.pinimg.com/736x/a6/53/5b/a6535bf37b1421b7d1cb62afeeb6bd39.jpg',
+    title: 'deal 2',
+    subtitle: '23'
+  },
+   {
+    img: 'https://i.pinimg.com/736x/90/68/01/90680196a494b9acb136632304321d05.jpg',
+    title: 'deal 2',
+    subtitle: '23'
+  },
+  {
+   img: 'https://i.pinimg.com/736x/d9/8d/18/d98d188eb06b9f56d5abe65ccf112a0c.jpg',
+    title: 'deal 2',
+    subtitle: '23'
+  },
+])
+</script>
 
 <style scoped>
 *{
@@ -88,6 +95,7 @@
     gap: 20px;       
     padding: 10px;
     margin-top: 3%;
+   
 }
  .productitems{
     width: 90%;
@@ -100,10 +108,11 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-     background-color: #854731;
+     background-color: #f7c3af;
     width: 150px;
     padding: 1%;
     border-radius: 10px;
+     box-shadow:0 10px 20px rgba(0, 0, 0, 0.9);
  }
  .button{
    color: white;

@@ -11,67 +11,7 @@
       </div>
   </div>
       </div>
-         
-      <div class="cart-card">
-      <div class="cart-item">
-      <img src="https://i.pinimg.com/736x/cf/63/7d/cf637da6ea699845769cc6c26ac8935b.jpg" alt="pizza">
-      <div class="item-details">
-        <span class="item-name">Cheezy hoted</span>
-        <span class="item-type">pizza</span>
-        <span class="item-price">$16</span>
-        <button class="cart-button">Add to Cart</button>
-      </div>
-      </div>
-      </div> 
-
-       <div class="cart-card">
-      <div class="cart-item">
-      <img src="https://i.pinimg.com/736x/72/b5/a1/72b5a16458ea71865ecc8189a3bf42eb.jpg" alt="fries">
-      <div class="item-details">
-        <span class="item-name">Finger fries</span>
-        <span class="item-type">Crispy</span>
-        <span class="item-price">$10</span>
-        <button class="cart-button">Add to Cart</button>
-      </div>
-      </div>
-      </div>
-
-       <div class="cart-card">
-      <div class="cart-item">
-      <img src="https://i.pinimg.com/736x/af/35/91/af359169ba9ab8c02d6f2e8eb86e32cd.jpg" alt="chicken zinger burger">
-      <div class="item-details">
-        <span class="item-name">Chicken Zinger</span>
-        <span class="item-type">Burger</span>
-        <span class="item-price">$11</span>
-        <button class="cart-button">Add to Cart</button>
-      </div>
-      </div>
-      </div>
-
-      <div class="cart-card">
-      <div class="cart-item">
-      <img src="https://i.pinimg.com/1200x/de/f4/77/def4772c25b1d237a5483d7ac4f2b6e5.jpg" alt="wings">
-      <div class="item-details">
-        <span class="item-name">Hot Wings </span>
-        <span class="item-type">Wings</span>
-        <span class="item-price">$12</span>
-        <button class="cart-button">Add to Cart</button>
-      </div>
-      </div>
-      </div>
-
-       <div class="cart-card">
-      <div class="cart-item">
-      <img src="https://i.pinimg.com/736x/af/35/91/af359169ba9ab8c02d6f2e8eb86e32cd.jpg" alt="Zinger Burger">
-      <div class="item-details">
-        <span class="item-name">Cheezy Zinger</span>
-        <span class="item-type">Burger</span>
-        <span class="item-price">$12</span>
-        <button class="cart-button">Add to Cart</button>
-      </div>
-    </div>
-  </div> -->
-  </div>
+  </div> 
 </template>
 
 <script setup>

@@ -22,11 +22,11 @@
       <div class="div2">
         <h2>Send Us a Message</h2>
         <hr>
-        <input class="input" type="text" placeholder="Your Name">
-        <input class="input" type="email" placeholder="Your Email">
-        <input class="input" type="text" placeholder="Subject">
+        <input class="input-placeholder" type="text" placeholder="Your Name">
+        <input class="input-placeholder" type="email" placeholder="Your Email">
+        <input class="input-placeholder" type="text" placeholder="Subject">
         <textarea class="textarea" placeholder="Your Message"></textarea>
-        <button class="button">send Message</button>
+        <button class="button button:hover">send Message!</button>
       </div>
     </div>
   
@@ -99,7 +99,7 @@ hr{
   border-radius: 7px;
 }
 
-.input{
+.input-placeholder{
   width: 100%;
   margin-top: 10px;
   padding: 8px;
@@ -132,9 +132,16 @@ hr{
     cursor: pointer;
     border-radius: 7px;
     color: white;
+    border: none;
     margin-top: 4%;
+    font-weight: 540;
     font-size: 14px;
     width: 50%;
+ }
+ .button:hover{
+  background-color: rgb(219, 130, 70);
+  box-shadow:0 2px 10px rgb(128, 114, 61,0.8) ;
+  color: white;
  }
 .contact{
     display: flex;

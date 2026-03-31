@@ -1,12 +1,16 @@
 <template>
     <div class="Newsletter">
         <h1 class="Newsletter-heading">Join Our Newsletter </h1>
-        <input class="input" type="text" placeholder="Please Enter Your Email" required>
+        <input class="input-newsletter" type="text" placeholder="Please Enter Your Email" required>
         <button class="button">Subscribe</button>
     </div>
 </template>
 
-<style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
   .Newsletter{
     background-color:rgba(255, 120, 0, 1) ;
     text-align: center;
@@ -20,7 +24,7 @@
     color: white;
     font-weight: 700;
   }
-  .input {
+  .input-newsletter{
   width: 50%;
   height: 20%;
   padding: 10px 10px; 

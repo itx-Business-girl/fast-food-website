@@ -1,7 +1,7 @@
 <template>
 <footer class="footer">
 
-  <!-- 🔹 TOP ROW -->
+  <!--  TOP ROW -->
   <div class="footer-top">
 
     <div class="footer-col">
@@ -17,7 +17,7 @@
 
   </div>
 
-  <!-- 🔹 BOTTOM ROW -->
+  <!--  BOTTOM ROW -->
   <div class="footer-bottom">
 
     <div class="footer-box">
@@ -53,7 +53,7 @@
 
 </footer>
 </template>
-<style>
+<style scoped>
    .footer {
   background-color: rgba(92, 18, 10, 1); 
   color: white;
@@ -108,5 +108,7 @@
   font-size: 24px;
   color: rgba(255,102,0,1);
   margin-bottom: 8px;
+  margin-top: 2%;
+  margin: 1%;
 }
 </style>
