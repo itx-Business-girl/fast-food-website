@@ -8,11 +8,19 @@
     <router-link class="nav-pages" to="/contact">Contact</router-link>
   </nav>
   <div class="search-box search-box search-box i">
-  <input class="input-search" type="search" placeholder="Search">
+  <input class="input-search" type="search" placeholder="Search" v-model="value" @keyup="textValueChange" >
   <i class="fa-solid fa-magnifying-glass"></i>
   </div>
   </header>
 </template>
+<script setup>
+ import {ref} from 'vue'
+const value = ref('')
+ const emit = defineEmits(['onChangeSearchBox'])
+ const textValueChange= ()=>{
+  emit('onChangeSearchBox', value.value)
+ }
+</script>
 
 <style scoped>
 * {
