@@ -49,4 +49,22 @@
   .welcome-button:hover{
     background-color: rgba(255, 140, 0, 1);
   }
+  @media (max-width:768px){
+   .welcome-img{
+    height: 45vh;
+  }
+  .welcome-h1{
+    font-size: 35px;
+    margin-bottom: 5%;
+  }
+  .welcome-h2{
+    font-size: 35px;
+    margin-bottom: 3%;
+  }
+  .welcome-button{
+    margin-bottom: 30%;
+  }
+
+
+}
 </style>

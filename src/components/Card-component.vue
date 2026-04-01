@@ -1,6 +1,6 @@
 <template>
     <div class="cart-container">
-  <div class="cart-card" v-for="value in productListData">
+  <div class="cart" v-for="value in productListData">
     <div class="cart-item">
       <img :src="value.img" :alt="value.title">
       <div class="item-details">
@@ -19,7 +19,7 @@
 </script>
 
 <style scoped>
-.cart-card {
+.cart {
   width: 262px;
   height: 150%;
   padding: 20px;
@@ -28,9 +28,6 @@
   margin-top: 20px;
   box-shadow: 0 6px 50px rgba(0,0,0,0.5);
   gap: 6%;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start; */
   
 }
 .cart-container {
@@ -75,8 +72,8 @@
 }
 
 .cart-button {
-  width: 110%;
-  padding: 12px 0;
+  width: 120%;
+  padding: 14px 0;
   background-color: rgba(255,102,0,1);
   color: white;
   font-weight: 600;

@@ -46,9 +46,9 @@
 
   <!--  SOCIAL-icons -->
   <div class="social">
-    <i class="fa-brands fa-instagram social icon"></i>
-    <i class="fa-brands fa-youtube social icon"></i>
-    <i class="fa-brands fa-tiktok social icon"></i>
+    <a href="https://www.instagram.com/_fast.food.lovers_/"><i class="fa-brands fa-instagram social icon"></i></a>
+    <a href="https://www.youtube.com/@FastFoodShorts"><i class="fa-brands fa-youtube social icon"></i></a>
+   <a href="https://www.tiktok.com/@viralfastfood"><i class="fa-brands fa-tiktok social icon"></i></a>
   </div>
 
 </footer>
@@ -80,7 +80,7 @@
 }
 
 .footer-col {
-  flex: 1;
+  /* flex: 1; */
   min-width: 180px;
   text-align: center;
 }
@@ -110,5 +110,14 @@
   margin-bottom: 8px;
   margin-top: 2%;
   margin: 1%;
+}
+
+@media (max-width:455px) {
+  .footer-top{
+    flex-direction: column;
+}
+.footer-bottom{
+  flex-direction: column;
+}
 }
 </style>

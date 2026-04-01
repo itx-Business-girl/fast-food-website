@@ -14,9 +14,9 @@
         <p><strong class="h1-strong">Contact:</strong> 1234567890</p>
         <p><strong class="h1-strong">Email:</strong> quickbite.com</p>
         <p><strong class="h1-strong">Visit Us:</strong>123 Main Street, Your City</p>
-        <a href=""><i class="fa-brands fa-instagram icons"></i></a>
-        <a href=""><i class="fa-brands fa-twitter icons"></i></a>
-        <a href=""><i class="fa-brands fa-tiktok icons"></i></a>
+        <a href="https://www.instagram.com/_fast.food.lovers_/"><i class="fa-brands fa-instagram icons"></i></a>
+        <a href="https://x.com/homevsfastfood"><i class="fa-brands fa-twitter icons"></i></a>
+        <a href="https://www.tiktok.com/@viralfastfood"><i class="fa-brands fa-tiktok icons"></i></a>
       </div>
 
       <div class="div2">

@@ -37,8 +37,9 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 65px;
+    /* height: 65px; */
     width: 100%;
+     padding: 15px;
   }
   .logo{
     color: #ccc;
@@ -54,7 +55,7 @@ body {
     color: #ccc;
     text-decoration: none;
     padding: 4px;
-    padding-left: 13%;
+    /* padding-left: 13%; */
     font-weight: 600;
   }
   .nav-pages:hover{
@@ -72,9 +73,9 @@ body {
   
  .search-box {
   position: relative;
-  width: 230px;   /* perfect size */
+  width: 230px;   
 }
-  
+ 
   .search-box i {
   position: absolute;
   right: 10px;
@@ -84,5 +85,35 @@ body {
 }
 .for-test{
   display: flex;
+}
+/* .header{
+  width: 145%;
+}
+.nav-pages{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-right: 6%;
+} */
+
+ @media (max-width:768px){
+     .header{
+      flex-direction: column;
+     
+     }
+     .nav-pages{
+      flex-direction: column;
+      gap: 7px;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      /* padding-right: 3%; */
+     }
+     /* .search-box{
+      width: 70%;
+      margin-left: 9%;
+     }
+     .logo{
+      margin-left: 23%;
+     } */
 }
 </style>
