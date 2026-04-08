@@ -25,16 +25,16 @@
   padding: 20px;
   background-color: white;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-top: 74px;
   box-shadow: 0 6px 50px rgba(0,0,0,0.5);
-  gap: 6%;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start; */
+  gap: 10px;
+
   
 }
 .cart-container {
-  display: flex;
+     display: flex;
+  align-items: center;
+  justify-content: center; 
   flex-wrap: wrap;
   gap: 37px; 
 }
@@ -75,12 +75,12 @@
 }
 
 .cart-button {
-  width: 110%;
+  width: 70px;
   padding: 12px 0;
   background-color: rgba(255,102,0,1);
   color: white;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 10px;
   border: none;
   border-radius: 14px;
   cursor: pointer;

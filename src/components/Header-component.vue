@@ -37,8 +37,9 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 65px;
+    height: 130%;
     width: 100%;
+    padding: 20px;
   }
   .logo{
     color: #ccc;
@@ -84,5 +85,19 @@ body {
 }
 .for-test{
   display: flex;
+}
+@media(max-width:768){
+  /* .header{ */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  /* } */
+  .nav-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 </style>
