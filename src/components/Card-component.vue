@@ -27,12 +27,12 @@
   border-radius: 15px;
   margin-top: 74px;
   box-shadow: 0 6px 50px rgba(0,0,0,0.5);
-<<<<<<< HEAD
+
   gap: 6%;
-=======
+
   gap: 10px;
 
->>>>>>> 0d5cd66adf1b34433a56e7d86ba64ded398626ae
+
   
 }
 .cart-container {
@@ -79,13 +79,12 @@
 }
 
 .cart-button {
-<<<<<<< HEAD
+
   width: 120%;
   padding: 14px 0;
-=======
+
   width: 70px;
   padding: 12px 0;
->>>>>>> 0d5cd66adf1b34433a56e7d86ba64ded398626ae
   background-color: rgba(255,102,0,1);
   color: white;
   font-weight: 600;

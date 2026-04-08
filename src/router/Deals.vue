@@ -48,7 +48,7 @@ const dataArray = ref([
     padding: 0%;
 }
  .welcome-img{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/a6/de/30/a6de3029f0e31d3647ef79af37e36a06.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('https://i.pinimg.com/1200x/a6/de/30/a6de3029f0e31d3647ef79af37e36a06.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -124,4 +124,15 @@ const dataArray = ref([
    font-weight: 900;
    margin-top: 75px;
  }
+  @media (max-width:768px){
+    .heading{
+      font-size: 22px;
+      padding-top: 100px;
+      padding-left: 2px;
+    }
+    .p1{
+      font-size: 15px;
+      padding-left: 2px;
+    }
+  }
 </style>

@@ -37,15 +37,15 @@ body {
     display: flex;
     justify-content:space-between;
     align-items: center;
-<<<<<<< HEAD
+
     /* height: 65px; */
     width: 100%;
      padding: 15px;
-=======
+
     height: 130%;
     width: 100%;
     padding: 20px;
->>>>>>> 0d5cd66adf1b34433a56e7d86ba64ded398626ae
+
   }
   .logo{
     color: #ccc;
@@ -92,7 +92,7 @@ body {
 .for-test{
   display: flex;
 }
-<<<<<<< HEAD
+
 /* .header{
   width: 145%;
 }
@@ -122,7 +122,7 @@ body {
      .logo{
       margin-left: 23%;
      } */
-=======
+    }
 @media(max-width:768){
   /* .header{ */
     /* display: flex;
@@ -136,6 +136,6 @@ body {
     align-items: center;
     flex-direction: column;
   }
->>>>>>> 0d5cd66adf1b34433a56e7d86ba64ded398626ae
+
 }
 </style>
