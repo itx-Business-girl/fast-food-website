@@ -11,10 +11,10 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 
 <template>
   <WelcomeItem>
-    <template #icon>
+    <template name=icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template name=heading>Documentation</template>
 
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
@@ -22,10 +22,10 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
   </WelcomeItem>
 
   <WelcomeItem>
-    <template #icon>
+    <template name=icon>
       <ToolingIcon />
     </template>
-    <template #heading>Tooling</template>
+    <template name=heading>Tooling</template>
 
     This project is served and bundled with
     <a href="https://vite.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
@@ -49,10 +49,10 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
   </WelcomeItem>
 
   <WelcomeItem>
-    <template #icon>
+    <template name=icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem</template>
+    <template name=heading>Ecosystem</template>
 
     Get official tools and libraries for your project:
     <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
@@ -65,10 +65,10 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
   </WelcomeItem>
 
   <WelcomeItem>
-    <template #icon>
+    <template name=icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community</template>
+    <template name=heading>Community</template>
 
     Got stuck? Ask your question on
     <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>
@@ -83,10 +83,10 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
   </WelcomeItem>
 
   <WelcomeItem>
-    <template #icon>
+    <template name=icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template name=heading>Support Vue</template>
 
     As an independent project, Vue relies on community backing for its sustainability. You can help
     us by
