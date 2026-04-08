@@ -7,28 +7,29 @@
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
+
   .Newsletter{
     background-color:rgba(255, 120, 0, 1) ;
     text-align: center;
     padding: 10px;
-    margin-top: 4%;
+    margin-top: 50px; 
     border-radius: 20px;
-    padding-bottom: 2%;
+    padding-bottom: 25px;
+    
+    
   }
 
   .Newsletter-heading{
     color: white;
+    font-size: 25px;
+    padding: 10px;
     font-weight: 700;
   }
   .input-newsletter{
-  width: 50%;
-  height: 20%;
+  width: 600px;
+  height: 40px;
   padding: 10px 10px; 
-  font-size: 16px;
+  font-size: 13px;
   border: 2px solid rgba(200,200,200,0.5);
   border-radius: 8px;
   outline: none;
@@ -41,6 +42,7 @@
   border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
+  margin:10px ;
   transition: 0.3s;
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  <form @submit.prevent="handleSubmit">
   <div class="img">
     
     <div class="top-text">
@@ -22,23 +23,84 @@
       <div class="div2">
         <h2>Send Us a Message</h2>
         <hr>
-        <input class="input-placeholder" type="text" placeholder="Your Name">
-        <input class="input-placeholder" type="email" placeholder="Your Email">
-        <input class="input-placeholder" type="text" placeholder="Subject">
-        <textarea class="textarea" placeholder="Your Message"></textarea>
-        <button class="button button:hover">send Message!</button>
+        <input v-model="name" class="input-placeholder" type="text" placeholder="Your Name">
+        <input v-model="email" class="input-placeholder" type="email" placeholder="Your Email">
+        <input v-model="subject" class="input-placeholder" type="text" placeholder="Subject">
+        <textarea v-model="message" class="textarea" placeholder="Your Message"></textarea>
+        <button type="button" @click="handleSubmit" class="button button:hover">send Message!</button>
       </div>
     </div>
-  
   </div>
-  
+  <div v-if="showToast" class="showToast">
+   {{ toastMessage }}
+  </div>
+  </form>
 </template>
+<script setup>
+import {ref} from 'vue';
+// input values
+const name = ref("");
+const email = ref("");
+const subject = ref("");
+const message = ref("");
+
+const showToast = ref(false)
+const toastMessage = ref('')
+
+// hide toast function
+const hidetoast = () => {
+  setTimeout(()=>{
+    showToast.value=(false)
+  },3000)
+}
+//  email validation function
+const isValidEmail = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+  // submit function
+const handleSubmit = () =>{
+  if(!name.value || !email.value || !subject.value || !message.value){
+    toastMessage.value = "please fill all fields"
+    showToast.value = true
+    hidetoast()
+  }
+  if(!isValidEmail(email.value)){
+  toastMessage.value="inValid Email Adress"
+  showToast.value= true
+  hidetoast()
+  return
+ }
+
+  // success
+toastMessage.value = "Your message successfully sent!"
+showToast.value = true
+hidetoast()
+
+ // clear fields
+  name.value=""
+  email.value=""
+  subject.value=""
+  message.value=""
+}
+ 
+</script>
 
 <style scoped>
 *{
     margin: 0%;
     padding: 0%;
 }
+  .showToast{
+    position: fixed;
+    background: rgb(27, 27, 27);
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    padding: 12px 18px;
+    bottom: 20px;
+    right: 20px;
+  }
+  
  .img {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../assets/contact.png');
   min-height: 100vh;
@@ -105,9 +167,9 @@ hr{
   padding: 8px;
   border-radius: 5px;
   border: none;
+  color: white;
   background-color:  rgba(109, 108, 108, 0.6);
-    backdrop-filter: blur(2px);
-    color: black;
+  backdrop-filter: blur(2px);
     font-weight: 600;
  } 
  .textarea{
@@ -135,8 +197,8 @@ hr{
     border: none;
     margin-top: 4%;
     font-weight: 540;
-    font-size: 14px;
-    width: 50%;
+    font-size: 13px;
+    width: 130px;
  }
  .button:hover{
   background-color: rgb(219, 130, 70);
@@ -150,7 +212,4 @@ hr{
     flex-direction: column;
     gap: 10px;
 }
-
-
-
 </style>

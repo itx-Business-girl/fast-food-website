@@ -60,15 +60,7 @@
   text-align: center;
   padding: 1%;
   border-radius: 20px 20px 0px 0px; 
-  margin-top: 2%;
-}
-  .footer {
-  background-color: rgba(92, 18, 10, 1);
-  color: white;
-  text-align: center;
-  padding: 1%;
-  border-radius: 20px 20px 0px 0px; 
-  margin-top: 2%;
+  margin-top: 100px;
 }
 
 .footer-container {

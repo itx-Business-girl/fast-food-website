@@ -157,22 +157,22 @@ body{
 }
 
   .img-background{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://i.pinimg.com/1200x/0b/99/18/0b9918cad06c24af7d1b2b7ee8987d84.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://i.pinimg.com/736x/db/12/03/db12030f15fa8581b78fdfbc00a0d340.jpg');
      background-position: center; 
      height: 80vh; 
      background-size: cover;
    background-repeat: no-repeat;
   }
   .h1{
-    color: aliceblue;
+    color: rgb(189, 142, 15);
     font-size: 40px;
     font-weight: 900;
   }
   .p{
-    color: aliceblue;
+    color: rgb(227, 228, 219);
     text-align: center;
-    font-weight: 500;
-    font-size:28px;
+    font-weight: 700;
+    font-size:25px;
   }
   .welcome-flex{
     display: flex;

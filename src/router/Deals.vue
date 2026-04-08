@@ -1,28 +1,17 @@
 <template>
+ 
     <div class="welcome-img ">
     <h1 class="heading">Exclusive Deals <strong class="strong-heading">&</strong> Combos</h1>
     <h2 class="h2">for you...</h2>
     <i><p class="p1">Enjoy our best fast food deals made just for you.<br> From juicy burgers to cheesy pizzas and crispy fries</br> — <br>grab your favorites at amazing prices.</br></p></i>
     </div>
     <i><h1 class="heading-speacial">Speacial deals!</h1></i>
+     <CardComponent  :productListData="dataArray"/>
+ 
 
-
-    <div class="productCart ">
-        <div class="product-flex" 
-     v-for="value in dataArray" 
-     :key="value.img">
-
-  <img class="productitems" :src="value.img" :alt="value.title" />
-  
-  <h3>{{ value.title }}</h3>
-  <p>{{ value.subtitle }}</p>
-  
-  <button class="button">Add to cart</button>
-
-</div>
-</div>
 </template>
 <script setup>
+import CardComponent from '@/components/Card-component.vue';
 import { ref } from 'vue'
 const dataArray = ref([
   {
@@ -65,14 +54,14 @@ const dataArray = ref([
     height: 60vh;
  }
  .heading{
-    color:#ccc;
+    color: rgb(189, 142, 15);
     font-size: 34px;
     font-weight: 700;
     padding-top: 7%;
     padding-left: 4%;
  }
  .h2{
-    color: rgb(199, 190, 189);
+    color:  rgb(189, 142, 15);
     font-size:33px;
     margin-top: 1%;
     margin-left:20%;
@@ -81,9 +70,9 @@ const dataArray = ref([
  .p1{
     margin-top: 2%;
     padding-left: 4%;
-    color: rgb(175, 70, 38);
+    color: rgb(227, 228, 219);
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
  }
  .strong-heading{
     color:rgb(167, 51, 15);
@@ -131,8 +120,8 @@ const dataArray = ref([
  .heading-speacial{
    color: brown;
    text-align: center;
-   font-size: 50px;
+   font-size: 32px;
    font-weight: 900;
-   margin-top: 2%;
+   margin-top: 75px;
  }
 </style>
